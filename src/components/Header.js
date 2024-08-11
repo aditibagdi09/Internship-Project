@@ -11,13 +11,7 @@ export default function Header() {
       >
         <Container>
           <Navbar.Brand href="/" className="transition">
-            <img
-              src="logo.png"
-              alt="logo"
-              width="30"
-              height="30"
-              className="d-inline-block align-top"
-            />{" "}
+            <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/apple-mail.png" alt="apple-mail"/>{" "}
             <span style={{ fontSize: "24px", fontWeight: "bold", color: "#2f2f2f" }}>
               Mailzy
             </span>
