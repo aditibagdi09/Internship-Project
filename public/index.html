@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <title>EmailHunt</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+  </body>
+  <script type="text/javascript">
+    function sendEmail(fromaddress, toaddress, subject, body) {
+      //console.log(address);
+      Email.send({
+        Host: "smtp.elasticemail.com",
+        Username: "aditibagdi09@gmail.com",
+        Password: "C6FA9B5146E1C2FFD14DD52769C4711ED66E",
+        To: toaddress,
+        From: fromaddress,
+        Subject: subject,
+        Body: body,
+      }).then(function (message) {
+        alert("Mail has been sent successfully");
+      });
+    }
+  </script>
+</html>

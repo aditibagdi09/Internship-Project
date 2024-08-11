@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+.ProseMirror {
+  min-height: 200px;
+  max-height: 200px;
+  overflow: scroll;
+  outline: auto;
+}
+@keyframes textAnimator {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes containerAnimator {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.containerTransition {
+  animation: 0.5s ease-out 0s containerAnimator;
+}
+.transition {
+  animation: 0.5s ease-out 0s textAnimator;
+}
